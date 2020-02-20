@@ -19,7 +19,7 @@
 %
 %   1 - Name of the folder that contains the notes
 \newcommand{\importbooknotes}[1]{
-    \import*{src/#1/}{main.tex}
+    \import{src/#1/}{main.tex}
 }
 
 %   Imports the notes of a chapter of a book
@@ -27,6 +27,13 @@
 %   1 - Name of the .tex file that contains the notes of the chapter
 \newcommand{\importchapternotes}[1]{
     \import{src/chapters/}{#1}
+}
+
+%   Imports the notes of a section
+%
+%   1 - Name of the .tex file that contains the notes of the section
+\newcommand{\importsectionnotes}[1]{
+    \import{src/sections/}{#1}
 }
 
 %   Allows a level of sectioning below subsubsection (namely, paragraph)
